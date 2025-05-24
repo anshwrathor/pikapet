@@ -1,0 +1,179 @@
+<!DOCTYPE HTML>
+<!--
+	Customized for Pikapet - Pet Products Australia
+	Base Template: Solid State by HTML5 UP (https://html5up.net/solid-state)
+	Edited by: [Your Name]
+-->
+<html>
+<head>
+	<title>Pikapet | Australia’s Cutest Pet Store</title>
+	<meta name="robots" content="noindex, nofollow">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/pikapet.css" />
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+
+	<div id="page-wrapper">
+
+		<!-- Header -->
+		<header id="header" class="alt fixed-header">
+		<div class="inner-header">
+			<a href="index.html" class="logo-link">
+			<img src="images/pikapet-logo.png" alt="Pikapet logo" class="site-logo" />
+			</a>
+			<nav>
+			<a href="#menu" class="menu-toggle">Menu</a>
+			</nav>
+		</div>
+		<button id="theme-toggle" aria-label="Toggle dark mode">🌓</button>
+		</header>
+
+
+
+			<!-- Dropdown Menu -->
+			<div id="menu-dropdown" class="dropdown-menu hidden">
+			<ul>
+				<li><a href="#banner">Home</a></li>
+				<li><a href="#about">About Us</a></li>
+				<li><a href="#categories">Shop Categories</a></li>
+				<li><a href="#testimonials">Testimonials</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+			</div>
+
+
+		<!-- Banner -->
+			<section id="banner">
+			<div class="inner">
+				<img src="images/pikapet-banner.png" alt="Cute cat and dog" class="hero-banner-img" />
+				<h2>WELCOME TO PIKAPET</h2>
+				<p>Your one-stop shop for pawsome pet products in Australia!</p>
+			</div>
+			</section>
+
+
+		<!-- Wrapper -->
+			<section id="wrapper">
+
+				<!-- About Us -->
+					<section id="about" class="wrapper style1">
+						<div class="inner">
+							<a href="#" class="image"><img src="images/pikapet-about.png" alt="Cute puppy and kitten" class="section-illustration" /></a>
+							<div class="content">
+								<h2 class="major">Who We Are</h2>
+								<p>Pikapet is an Aussie-born small biz that loves spoiling furry friends. From chew toys to stylish collars, we bring the best for your cats and dogs with love and care.</p>
+							</div>
+						</div>
+					</section>
+
+				<!-- Shop Categories -->
+					<section id="categories" class="wrapper alt style2">
+						<div class="inner">
+							<a href="#" class="image"><img src="images/pikapet-shop.png" alt="Dog accessories" class="section-illustration" /></a>
+							<div class="content">
+								<h2 class="major">Shop by Category</h2>
+								<p>Browse our curated range for both cats and dogs. From nutrition to toys, we’ve got something for every tail wag and purr.</p>
+							</div>
+						</div>
+					</section>
+
+				<!-- Testimonials -->
+					<section id="testimonials" class="wrapper style3">
+						<div class="inner">
+							<a href="#" class="image"><img src="images/pikapet-testimonial.png" alt="Happy dog owner" class="section-illustration"/></a>
+							<div class="content">
+								<h2 class="major">What Our Customers Say</h2>
+								<p>“My dog Luna is obsessed with her new toy from Pikapet. Great quality and fast delivery!” - Jess, VIC<br>
+								“Finally found a one-stop shop for both my fur babies!” - Amir, NSW</p>
+							</div>
+						</div>
+					</section>
+
+				<!-- CTA Section -->
+					<section id="cta" class="wrapper alt style1">
+						<div class="inner">
+							<h2 class="major">Visit Us or Shop Online</h2>
+							<p>Pop by our Melbourne store or explore our full catalogue online. Treats and belly rubs included!</p>
+							<ul class="actions stacked">
+								<li><a href="#footer" class="button fit">Get in Touch</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</section>
+
+		<!-- Footer -->
+			<section id="footer">
+				<div class="inner">
+					<h2 class="major">Contact Pikapet</h2>
+					<p>Have questions or want to order something custom? Reach out to us!</p>
+					<form method="post" action="#">
+						<div class="fields">
+							<div class="field">
+								<label for="name">Name</label>
+								<input type="text" name="name" id="name" />
+							</div>
+							<div class="field">
+								<label for="email">Email</label>
+								<input type="email" name="email" id="email" />
+							</div>
+							<div class="field">
+								<label for="message">Message</label>
+								<textarea name="message" id="message" rows="4"></textarea>
+							</div>
+						</div>
+						<ul class="actions">
+							<li><input type="submit" value="Send Message" /></li>
+						</ul>
+					</form>
+					<ul class="contact">
+						<li class="icon solid fa-home">Pikapet HQ<br />123 Bark Street, Melbourne VIC 3000</li>
+						<li class="icon solid fa-phone">(03) 9876 5432</li>
+						<li class="icon solid fa-envelope"><a href="#">hello@pikapet.au</a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Pikapet 2025. All rights reserved.</li>
+						<li>Design: Based on HTML5 UP's Solid State</li>
+					</ul>
+				</div>
+			</section>
+
+	</div>
+
+	<script>
+	const menuToggle = document.querySelector('a[href="#menu"]');
+	const dropdown = document.getElementById('menu-dropdown');
+
+	menuToggle.addEventListener('click', function (e) {
+		e.preventDefault();
+		dropdown.classList.toggle('hidden');
+	});
+
+	window.addEventListener('click', function (e) {
+		if (!dropdown.contains(e.target) && !menuToggle.contains(e.target)) {
+		dropdown.classList.add('hidden');
+		}
+	});
+	</script>
+
+	<script>
+	const toggle = document.getElementById("theme-toggle");
+	toggle.addEventListener("click", () => {
+		document.body.classList.toggle("dark-mode");
+	});
+	</script>
+
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+</html>

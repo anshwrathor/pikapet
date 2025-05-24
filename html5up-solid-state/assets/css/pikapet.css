@@ -1,0 +1,475 @@
+
+body {
+  background-color: #fff8f0;
+  color: #333 !important;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #333 !important;
+  font-family: 'Poppins', sans-serif;
+}
+
+.wrapper.style1,
+.wrapper.style2,
+.wrapper.style3,
+.wrapper.alt.style1 {
+  background-color: #fef7f1;
+  padding: 4em 2em;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.button {
+  background-color: #6bc3b7;
+  color: white;
+  border-radius: 25px;
+  padding: 0.75em 2em;
+  font-weight: 600;
+  transition: 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: #4bb0a3;
+  transform: scale(1.05);
+}
+
+.image img {
+  transition: transform 0.3s ease;
+}
+
+.image:hover img {
+  transform: scale(1.05);
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  max-width: 600px;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 auto;
+}
+
+#banner {
+  background: #fff8f0; /* pastel bg */
+  color: #333;
+  text-align: center;
+  padding: 5em 2em;
+  background-image: none; 
+}
+
+#banner {
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+/* Nuke all geometric bg overlays */
+.wrapper:before,
+.wrapper:after,
+.wrapper.alt:before,
+.wrapper.alt:after,
+.wrapper.spotlight:before,
+.wrapper.spotlight:after {
+	content: none !important;
+	display: none !important;
+	background-image: none !important;
+	box-shadow: none !important;
+	height: 0 !important;
+}
+
+/* Setting a clean bg */
+.wrapper,
+.wrapper.alt,
+.wrapper.spotlight,
+.wrapper.style1,
+.wrapper.style2,
+.wrapper.style3 {
+	background-color: #fff8f0 !important;  
+	color: #333 !important;
+	position: relative !important;
+}
+
+
+/* Set global page background */
+body, #page-wrapper {
+  background-color: #fff8f0 !important;
+}
+
+.wrapper {
+  background: none !important;
+  box-shadow: none !important;
+}
+
+#header.alt {
+  background-color: transparent !important;
+  color: #333 !important;
+}
+
+#header.alt h1 a {
+  color: #333 !important;
+}
+
+#header.alt nav a {
+  color: #333 !important;
+}
+
+/* Hamburger menu icon */
+#menuToggle, #menuToggle span {
+  background-color: #333 !important;
+}
+
+#menu .inner {
+  background-color: #fff8f0 !important;
+  color: #333 !important;
+}
+
+#menu .inner h2,
+#menu .inner .links a {
+  color: #333 !important;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  background-color: #ffffff !important;
+  color: #333 !important;
+  border: 1px solid #ccc !important;
+  border-radius: 10px;
+  padding: 0.75em 1em;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1em;
+}
+
+form label {
+  color: #333 !important;
+  font-weight: 600;
+}
+
+form input[type="submit"] {
+  background-color: #6bc3b7;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 0.75em 2em;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+  background-color: #4bb0a3;
+  cursor: pointer;
+}
+
+#header.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff8f0 !important; /* Match your site BG */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  z-index: 999;
+  padding: 0.5em 2em;
+}
+
+.inner-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo style */
+.site-logo {
+  max-height: 50px;
+  width: auto;
+  display: block;
+}
+
+#header nav a,
+#header h1 a {
+  color: #333 !important;
+  font-weight: 600;
+  font-size: 1.1em;
+}
+
+body {
+  padding-top: 80px;
+}
+
+.site-logo {
+  max-height: 100px !important;
+  height: auto;
+  width: auto;
+  display: block;
+}
+
+.site-logo img {
+  height: 40px;
+  width: auto;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+#header h1 {
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+body {
+  background: #fff8f0 !important;
+  background-image: none !important;
+  background-color: #fff8f0 !important;
+}
+
+ul.actions li {
+  display: inline-block;
+  width: auto !important;
+  padding: 0 !important;
+  margin: 1em 0;
+  list-style: none;
+}
+
+ul.actions li > * {
+  width: auto !important;
+  display: inline-block;
+}
+
+ul.actions .button,
+form input[type="submit"] {
+  background-color: #6bc3b7;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 0.75em 2em;
+  font-weight: bold;
+  font-size: 1em;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+ul.actions .button:hover,
+form input[type="submit"]:hover {
+  background-color: #4ca69e;
+}
+
+#footer form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.button,
+input[type="submit"],
+input[type="button"],
+button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.75em;
+  line-height: normal;
+  padding: 0 2em;
+  font-size: 1em;
+}
+
+a.button {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  height: 3.75em;
+  padding: 0 2em;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.2 !important;
+  vertical-align: middle;
+  color: #fff !important;
+  background-color: #6bc3b7 !important;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s ease;
+}
+
+a.button:hover {
+  background-color: #4ca69e !important;
+}
+
+#banner {
+  padding: 6em 2em;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#banner .inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-banner-img {
+  max-width: 500px;
+  width: 60%;
+  height: auto;
+  margin-bottom: 2em;
+}
+
+#footer .contact li,
+#footer .contact li a {
+  color: #333 !important;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+#footer .contact li a:hover {
+  color: #6bc3b7 !important;
+  text-decoration: underline;
+}
+
+.section-illustration {
+  display: block;
+  margin: 0 auto 2.5em auto; /* center + bottom spacing */
+  max-width: 300px;
+  height: auto;
+}
+
+.section-illustration + h2,
+.section-illustration + .major {
+  margin-top: 2.5em !important;
+}
+
+.wrapper .content h2.major {
+  margin-top: 2em !important;
+}
+
+.wrapper .image {
+  margin-bottom: 2em;
+  display: block;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 60px;
+  right: 30px;
+  background: #fffaf3;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1em;
+  z-index: 999;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.dropdown-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-menu ul li {
+  margin: 0.5em 0;
+}
+
+.dropdown-menu ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 0.95em;
+}
+
+.hidden {
+  display: none;
+}
+
+body.is-menu-visible:before {
+  background-color: transparent !important;
+  backdrop-filter: none !important;
+  pointer-events: none !important;
+}
+
+/* 🌗 Theme Toggle Button */
+#theme-toggle {
+  position: absolute;
+  top: 2.5em;
+  right: 1.5em;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+/* 🌒 DARK MODE */
+body.dark-mode {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode p,
+body.dark-mode a,
+body.dark-mode label {
+  color: #f0f0f0 !important;
+}
+
+body.dark-mode .wrapper,
+body.dark-mode .wrapper.alt,
+body.dark-mode .wrapper.spotlight {
+  background-color: #2b2b2b !important;
+}
+
+body.dark-mode #footer {
+  background-color: #1a1a1a;
+}
+
+body.dark-mode .button,
+body.dark-mode input[type="submit"] {
+  background-color: #6bc3b7;
+  color: white;
+}
+
+body.dark-mode .button:hover,
+body.dark-mode input[type="submit"]:hover {
+  background-color: #4ca69e;
+}
+
+/* Contact form fields */
+body.dark-mode input,
+body.dark-mode textarea {
+  background-color: #333 !important;
+  color: #f0f0f0 !important;
+  border: 1px solid #555 !important;
+}
+
+/* Menu dropdown (if any) */
+body.dark-mode .dropdown-menu {
+  background-color: #2b2b2b;
+  color: #f0f0f0;
+}
+
+body.dark-mode #footer .contact li,
+body.dark-mode #footer .contact li a {
+  color: #f0f0f0 !important;
+}
+
+/* 🔧 Fix faded welcome heading + banner subtext */
+body.dark-mode #banner h2,
+body.dark-mode #banner p {
+  color: #ffffff !important;
+  opacity: 1 !important;
+}
+
+body.dark-mode #banner {
+  background: #1e1e1e !important;
+}
