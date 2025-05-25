@@ -29,9 +29,9 @@
 			<a href="#menu" class="menu-toggle">Menu</a>
 			</nav>
 		</div>
-		<button id="theme-toggle" aria-label="Toggle dark mode">🌓</button>
-		</header>
+		<button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
 
+		</header>
 
 
 			<!-- Dropdown Menu -->
@@ -167,6 +167,26 @@
 	});
 	</script>
 
+	<script>
+	let lastScrollTop = 0;
+	const toggleButton = document.getElementById("theme-toggle");
+
+	window.addEventListener("scroll", function () {
+		let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+		if (currentScroll > lastScrollTop) {
+		// Scrolling down
+		toggleButton.style.opacity = "0";
+		toggleButton.style.pointerEvents = "none";
+		} else {
+		// Scrolling up
+		toggleButton.style.opacity = "1";
+		toggleButton.style.pointerEvents = "auto";
+		}
+
+		lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+	}, false);
+	</script>
 
 	<!-- Scripts -->
 	<script src="assets/js/jquery.min.js"></script>

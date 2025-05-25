@@ -398,14 +398,15 @@ body.is-menu-visible:before {
 
 /* 🌗 Theme Toggle Button */
 #theme-toggle {
-  position: absolute;
-  top: 2.5em;
+  position: fixed;
+  top: 1.5em;
   right: 1.5em;
+  z-index: 9999;
   background: none;
   border: none;
   font-size: 1.5rem;
   cursor: pointer;
-  z-index: 1000;
+  transition: opacity 0.3s ease;
 }
 
 /* 🌒 DARK MODE */
@@ -472,4 +473,144 @@ body.dark-mode #banner p {
 
 body.dark-mode #banner {
   background: #1e1e1e !important;
+}
+
+#footer .inner .copyright li {
+  color: #333 !important;
+}
+body.dark-mode #footer .inner .copyright li {
+  color: #eee !important; 
+
+  /* Light mode */
+body:not(.dark-mode) #contact,
+body:not(.dark-mode) section#contact {
+  background-color: #fff9f2; /* or your preferred light mode bg */
+  color: #1a1a1a;
+}
+
+body:not(.dark-mode) #contact h2,
+body:not(.dark-mode) #contact p,
+body:not(.dark-mode) #contact label {
+  color: #1a1a1a;
+}
+
+#contact {
+  background-color: #1e1f26; /* <- this might be sticking even in light mode */
+}
+
+/* Force correct footer styling on mobile in LIGHT MODE */
+@media screen and (max-width: 768px) {
+  body:not(.dark-mode) #footer {
+    background-color: #fff9f2 !important;
+    background-image: none !important;
+  }
+
+/* Force light footer appearance on mobile when NOT in dark mode */
+@media screen and (max-width: 768px) {
+  body:not(.dark-mode) #footer {
+    background-color: #fff9f2 !important;
+  }
+
+  body:not(.dark-mode) #footer * {
+    color: #1a1a1a !important;
+    fill: #1a1a1a !important;
+  }
+#theme-toggle,
+#theme-toggle:focus,
+#theme-toggle:active,
+#theme-toggle:visited {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+#theme-toggle img {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+#theme-toggle {
+  position: fixed;
+  top: 1.5em;
+  right: 1.5em;
+  background-color: #ffe9cc;
+  border: none;
+  border-radius: 50%;
+  padding: 0.6em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  z-index: 9999;
+}
+
+#theme-toggle svg {
+  width: 20px;
+  height: 20px;
+  stroke: #1a1a1a;
+}
+
+#theme-toggle:hover {
+  background-color: #ffd8a8;
+  transform: scale(1.05);
+}
+
+body.dark-mode #theme-toggle {
+  background-color: #333;
+}
+
+body.dark-mode #theme-toggle svg {
+  stroke: #f9f9f9;
+}
+
+#theme-toggle {
+  position: fixed;
+  top: 1.5em;
+  right: 1.5em;
+  background: none;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  z-index: 9999;
+  cursor: pointer;
+}
+
+#theme-toggle svg {
+  width: 28px;
+  height: 28px;
+  stroke: #333; /* for light mode */
+  stroke-width: 2;
+  fill: none;
+  transition: stroke 0.3s ease;
+}
+
+/* When in dark mode */
+body.dark-mode #theme-toggle svg {
+  stroke: #f5f5f5; /* for dark mode */
+}
+
+#theme-toggle {
+  position: fixed;
+  top: 2.5em;
+  right: 1.5em;
+  font-size: 26px;
+  background: none;
+  border: none;
+  outline: none;
+  color: #333;
+  z-index: 9999;
+  cursor: pointer;
+  transition: opacity 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode #theme-toggle {
+  color: #fff;
 }
